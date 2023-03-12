@@ -13,11 +13,11 @@ module.exports = {
     },
     goerli: {
       url: 'https://eth-goerli.g.alchemy.com/v2/shdu4odG9tIK91rz0J9cXOcJZYM5tg06',
-      accounts: ['deec5ebad6569f5eac6c45a23bf11cd86859ede32ac8b4734ce8483a453f0fa4']
+      accounts: ['']
     },
     sepolia: {
       url: 'https://eth-sepolia.g.alchemy.com/v2/YwApBtzyWPkPU4oudtNihJkvhre7v32R',
-      accounts: ['deec5ebad6569f5eac6c45a23bf11cd86859ede32ac8b4734ce8483a453f0fa4']
+      accounts: ['']
     }
   },
   etherscan: {
