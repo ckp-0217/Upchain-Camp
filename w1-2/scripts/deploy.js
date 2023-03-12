@@ -14,7 +14,7 @@ async function main() {
   const counter = await Counter.deploy();
 
   await counter.deployed();
-  //0x222983FE95125dc728d6f29ca81E9Db7726a3907
+  //0x0a2bd2cBEFE551bd22448A073838619626074330
   console.log(counter.address);
 
 
