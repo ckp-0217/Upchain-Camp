@@ -16,7 +16,11 @@ async function main() {
   await myErc20.deployed();
   console.log(myErc20.address);
 
+  const Vault = await hre.ethers.getContractFactory("Vault");
+  const vault = await Vault.deploy();
 
+  await vault.deployed();
+  console.log(vault.address);
 
 }
 
