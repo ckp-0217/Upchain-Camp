@@ -1,0 +1,6 @@
+{
+    "description": "A gift of commemorative value",
+    "name": "DiGIFT commemorate #0",
+    "image": "http://ckpdebucket.oss-cn-hangzhou.aliyuncs.com/%E5%A4%B4%E5%83%8F.JPG", //图片的地址 不同的图片用不同的地址
+    "attributes": "UP camp"
+}

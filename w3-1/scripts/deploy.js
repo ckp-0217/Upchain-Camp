@@ -6,7 +6,7 @@
 // global scope, and execute the script.
 const hre = require("hardhat");
 
-async function main() {
+async function deployERC20() {
   console.log('network:', network.name, (await hre.ethers.provider.getNetwork()).chainId);
 
 
@@ -23,10 +23,24 @@ async function main() {
   console.log(vault.address);
 
 }
+async function deployERC721() {
+  console.log('network:', network.name, (await hre.ethers.provider.getNetwork()).chainId);
 
+
+  const MyErc721 = await hre.ethers.getContractFactory("MyErc721");
+  const myErc721 = await MyErc721.deploy("Wild","WILD");
+
+  await myErc721.deployed();
+  console.log(myErc721.address);
+
+}
 // We recommend this pattern to be able to use async/await everywhere
 // and properly handle errors.
-main().catch((error) => {
+// deployERC20().catch((error) => {
+//   console.error(error);
+//   process.exitCode = 1;
+// });
+deployERC721().catch((error) => {
   console.error(error);
   process.exitCode = 1;
 });
